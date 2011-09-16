@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+var Rabblescay = require('../lib/rabblescay');
+var sys = require('sys');
+
+if ( process.argv[2] && process.argv[2].length )
+{
+  var search = process.argv[2];
+  var letters = process.argv[3] ? process.argv[3] : [];
+  
+  var results;
+  try
+  {
+    results = Rabblescay(search, letters);
+    results.forEach(function(word)
+    {
+      sys.puts(word);
+    });
+  }
+  catch ( e )
+  {
+    sys.puts(e);
+  }
+}
+else
+{
+  sys.puts("usage: rabblescay word [letters]");
+}
