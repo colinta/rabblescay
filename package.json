@@ -1,6 +1,6 @@
 {
     "name": "rabblescay"
-  , "version": "1.0.0"
+  , "version": "1.0.1"
   , "description": "Uses regex-based (simpler, for non-programmers) search patterns to help find... words."
   , "keywords": []
   , "author": "Colin Thomas-Arnold <colinta@mac.com>"
@@ -12,5 +12,4 @@
   , "vows": ">= 0.5.10"
   }
   , "main": "lib/rabblescay.js"
-  , "engines": { "node": "0.4.x" }
 }
