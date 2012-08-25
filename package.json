@@ -1,6 +1,6 @@
 {
     "name": "rabblescay"
-  , "version": "1.0.3"
+  , "version": "1.0.4"
   , "description": "Uses regex-based search patterns to help find words."
   , "keywords": []
   , "author": "Colin Thomas-Arnold <colinta@mac.com>"
