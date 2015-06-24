@@ -1,5 +1,5 @@
 
 test:
-	@echo "populate me"
+	@./node_modules/vows/bin/vows
 
 .PHONY: test

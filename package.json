@@ -1,15 +1,15 @@
 {
     "name": "rabblescay"
-  , "version": "1.0.4"
+  , "version": "1.0.5"
   , "description": "Uses regex-based search patterns to help find words."
   , "keywords": []
-  , "author": "Colin Thomas-Arnold <colinta@mac.com>"
+  , "author": "Colin T.A. Gray <colinta@gmail.com>"
   , "bin": { "rabblescay": "./bin/rabblescay" }
   , "directories": { "test": "./test", "bin": "./bin" }
   , "dependencies":
   {
     "assert": ">= 0.4.9"
-  , "vows": ">= 0.5.10"
+  , "vows": ">= 0.8.1"
   }
   , "main": "lib/rabblescay.js"
 }

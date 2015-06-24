@@ -14,15 +14,15 @@ if ( process.argv[2] && process.argv[2].length )
     results = Rabblescay(search, letters);
     results.forEach(function(word)
     {
-      util.puts(word);
+      console.log(word);
     });
   }
   catch ( e )
   {
-    util.puts(e);
+    console.log(e);
   }
 }
 else
 {
-  util.puts("usage: rabblescay word [letters]");
+  console.log("usage: rabblescay word [letters]");
 }

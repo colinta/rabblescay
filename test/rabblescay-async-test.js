@@ -43,10 +43,10 @@ function rabblescayAsyncTest(expected)
         var search = match[1];
         var letters = match[2].split('');
 
-        return rabblescay(search, letters, this.callback);
+        return rabblescay(search, letters)
       }
   };
-  
+
   ret['we do not get an error'] = function(err, results)
     {
       if ( err instanceof Error )  assert.equal(err.message, '');
@@ -77,7 +77,7 @@ vows.describe('Performing a rabblescay search').addBatch({
   'when entering a search for "dog", with letters ""': rabblescayAsyncTest('dog'),
   'when entering a search for "dog.y", with letters "*"': rabblescayAsyncTest('dogey,doggy'),
   'when entering a search for "do.*y", with letters "**"': rabblescayAsyncTest('dobby,doby,dodgy,dogey,doggy,dogy,doily,dolly,donsy,doody,dooly,doomy,doozy,dopey,dopy,dorky,dormy,dorty,dory,dotty,doty,dowdy,downy,dowry,doxy,doyly,dozy'),
-  
+
   // errors
   'when entering a search for "fo{2}t", with letters ""': rabblescayAsyncTest('foot'),
   }).export(module);

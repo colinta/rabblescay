@@ -78,7 +78,7 @@ To indicate a blank tile, use '*' in your letters.
 
 (The MIT License)
 
-Copyright (c) 2011 Colin Thomas-Arnold &lt;colinta@gmail.com&gt;
+Copyright (c) 2011 Colin Thomas-Arnold <colinta@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
